@@ -1,0 +1,168 @@
+<!-- TODO:: Keeping it for future use -->
+<!-- 
+Begin db/info/shows/member.html
+ -->
+	<link rel = "stylesheet" type="text/css" href= "css/reset.css">
+	<link rel = "stylesheet" type="text/css" href= "css/style.css">
+	<script src="js/zepto.js"></script>
+	<link rel = "stylesheet" type="text/css" href="css/blue.css" >
+	<script src="js/icheck.js"></script>
+<script>
+$(document).ready(function(){
+  $('input').each(function(){
+    var self = $(this),
+      label = self.next(),
+      label_text = label.text();
+
+    label.remove();
+    self.iCheck({
+      checkboxClass: 'icheckbox_line-blue',
+      radioClass: 'iradio_line-blue',
+      insert: label_text
+    });
+  });
+});
+</script>
+<div id="container">
+<div class = "content">
+	<div id = "header">
+			  <h1> Social Ride  <img src="images/facebook.png" class="fb" alt="fb"></h1>
+	</div><!--end of header-->
+				
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/map_utils.js"></script>
+
+    <form id="member_form" onsubmit="return false;" action="/api/business/{{bid}}/member/{{_id}}">
+		    <fieldset id="member_info">
+			    <legend>Member Information</legend>
+					
+				    <ul>
+						<li>
+							<input for="file" type="button" name="add_photo" id="add_photo" value="add photo"/>
+						</li>
+					    <li>
+						    <label for="_id" class="mem_id">Member ID*</label>
+						    <input type="text" name="_id" id="_id" value = ""/>
+					    </li>
+                        <li>
+						    <label for="name"  class="fullname">Full Name*</label><br />
+						    <input type="text" name="name" id="fullname" value = ""/>
+					    </li>
+                         <li>
+						    <label for="sex"  class="gend">Sex*</label><br />
+						    <div class="radio_button" >
+							<input type="radio" name="sex" checked />
+							<label>Male</label>
+							</div>
+							<div class="radio_button2" >
+							<input type="radio" name="sex" />
+							<label>Female</label>
+							</div>
+					    </li>
+                         <li>
+						    <label for = "smocking" class="smock">Smoking</label><br />
+						    <div class="radio_button3" >
+							<input type="radio" name="smocking" class="radio_button" checked />
+							<label>Yes</label>
+							</div>
+							<div class="radio_button4" >
+							<input type="radio" name="smocking" class="radio_button" />
+							<label>No</label>
+							</div>
+					    </li>
+                        <li>
+						    <label for="likes"  class="like">I Like</label><br />
+						    <input type="text" name="likes" id="like" value = ""/>
+							
+					    </li> 
+				    </ul>
+		    </fieldset>
+    </form>
+
+    <form id="car_info" onsubmit="return false;">
+        <fieldset id="car_info">
+            <legend class="car_fo">Car Information</legend>
+                <ul>
+                    <li id="Indx">Number</li>
+                    <li>
+                        <label for="model">Car Model*</label><br />
+                        <input type="text" name="model" id="model" value=""/>
+                    </li>
+                    <li>
+                        <label for="capicity" class="capacity">Capicity*</label><br />
+                        <input type="text" name="capicity" id="capicity" value=""/>
+                    </li>
+                </ul>
+        </fieldset>
+    </form>
+	<button id="add_likes" type="button" >Add Likes</button>
+    <button id="add_car" type="button" >Add Another car </button>
+
+</div><!--End of content-->
+	<div class="clr"></div>
+                    <div class="buttonStyle">
+                    <button id="update" type="button" >Update </button>
+                    <button id="cancel" type="button" >Cancel</button>
+                    </div>
+       
+
+	
+	<footer>
+			
+			<ul id= "footer_nav">
+				<li><a href = ""><img src="images/about_icon.png" class="about"><h4>About us</h4></a></li>	
+				<li><a href = ""><img src="images/setting_icon.png" class="settings"><h4>Setting</h4></a></li>
+				<li><a href = ""><img src="images/mail_icon.png" class="contact"><h4>Contact us</h4></a></li>
+			</ul>
+			
+	</footer><!--end of footer-->
+
+</div><!--End of container-->
+
+<div id="fb-root">
+    <script type="text/javascript" src="js/facebook.js"></script>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#update").click(function(){
+            var member = Object();
+            form = $("#member_form").serializeArray();
+            LOG(form);
+            $.each(form, function (item) {
+                LOG(form[item].name + " : " + form[item].value );
+                member[form[item].name] = form[item].value;
+            });
+             
+            LOG(member);
+            var success = function(){
+                alert("Update is Successfull !1 ");
+                //window.location ="/business/{{bid}}";
+            }
+            
+            var failure = function(){
+                warn("Update failed");
+            }
+            //data = JSON.stringify(member) ;            
+            //post_json(url,data,success,failure);
+            
+        });
+	    $("#cancel").click(function(){
+            window.location = "/business/{{bid}}";
+        });
+
+    });
+    function failure(){
+        alert("failed to fetch data");
+    }
+    function load_user_info(){
+        var url = "http://socialfarm.org/couchdb/social_ride/user."+ get_user().id ;
+        get_json(url,function(data){
+            $('#_id').val(data._id);
+            $('#fullname').val(data.name);
+        },failure);
+    }
+</script>
+<!-- 
+End db/info/shows/member.html
+ -->
