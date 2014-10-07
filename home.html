@@ -26,7 +26,7 @@
                 <img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage">
                 <!--img src= "https://graph.facebook.com/727047958/picture?type=normal" alt= "Upicture" class="UpictureImage"/-->
                 <br />
-                <h3> User Details </h3>
+                <!--h3> User Details </h3-->
                 <div class="info">
                     <ul>
                         <li id="name">Name: </li>
@@ -124,8 +124,8 @@
                 </div><!--end requested_rides-->
             </div><!--end content-->
 
-            <button id = "submit_button" onclick=submit_request()>Create Ride</button><!--end button-->
-            
+            <!--button id = "submit_button" onclick=submit_request()>Create Ride</button><end button-->
+            <button id = "submit_button" onclick="javascript:location.href='request_ride.html'">Create Ride</button><!--end button-->
             <footer>
 
                 <ul id= "footer_nav">
@@ -137,7 +137,7 @@
         </div><!--end of container-->	
     </body>
 
-    <div id = "submit" style="postion: absolute; display:none;">
+    <div id = "submit" style="position: absolute; display:none;">
         <button id = "submit_button" onclick=submit_request()>Create Ride</button>
     </div>
 
