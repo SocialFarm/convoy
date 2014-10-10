@@ -37,6 +37,7 @@ h1 {
 	font-size: 35px;
 	
 	text-transform: none;
+	color:#fff;
 	
 
 }
@@ -1332,19 +1333,19 @@ legend{
 	margin-top: 10px;
 }
 .radio_button2{
-	margin-left: 339px;
-	margin-top: -39px;
+	margin-left: 319px;
+	margin-top: -20px;
 }
 .radio_button3{
 	float:right;
 	margin-right: 330px;
-	margin-top: -76px;
+	margin-top: -66px;
 	
 }
 .radio_button4{
 	float:right;
-	margin-right: 221px;
-	margin-top: -76px;
+	margin-right: 260px;
+	margin-top: -66px;
 
 	
 }
@@ -1353,7 +1354,7 @@ legend{
    float:right;
    font:normal 16px "Calibri";
    color:#a3a7aa;
-   margin-top:-90px;
+   margin-top:-70px;
    margin-right:350px;
     
     
@@ -1362,14 +1363,14 @@ legend{
 .like{
    float:left;
    margin-left:230px;
-   margin-top:-50px;
+   margin-top:-10px;
    font:normal 16px "Calibri";
    color:#a3a7aa;
     
 }
 #like{
    margin-left:230px;
-   margin-top:-60px; 
+   margin-top:0px; 
 
 }
 #car_info ul{
@@ -1405,7 +1406,7 @@ legend{
 }
 #add_likes{
     float:right;
-    margin-top:-190px;
+    margin-top:-160px;
     margin-right:220px;
     color: #ffffff;
     text-transform:Uppercase; 
