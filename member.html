@@ -4,12 +4,18 @@ Begin db/info/shows/member.html
  -->
 	<link rel = "stylesheet" type="text/css" href= "css/reset.css">
 	<link rel = "stylesheet" type="text/css" href= "css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script src="js/zepto.js"></script>
 	<link rel = "stylesheet" type="text/css" href="css/blue.css" >
 	<script src="js/icheck.js"></script>
+	<script src="js/jquery.sumoselect.min.js"></script>
+    <link href="css/sumoselect.css" rel="stylesheet" />
+
 <script>
 $(document).ready(function(){
+
   $('input').each(function(){
+  jQuery.noConflict();
     var self = $(this),
       label = self.next(),
       label_text = label.text();
@@ -22,16 +28,28 @@ $(document).ready(function(){
     });
   });
 });
+
 </script>
+ <script>
+        $(document).ready(function () {
+            window.asd = $('.SlectBox').SumoSelect({ csvDispCount: 3 });
+            window.test = $('.testsel').SumoSelect({okCancelInMulti:true });
+
+        });
+ </script>
+
 <div id="container">
 <div class = "content">
 	<div id = "header">
-			  <h1> Social Ride  <img src="images/facebook.png" class="fb" alt="fb"></h1>
+			   <img src="images/facebook.png" class="fb" alt="fb">
+           <a href="home.html" ><h1>Social Ride</h1></a>
 	</div><!--end of header-->
 				
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/map_utils.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="js/map_utils.js"></script>
+	
+	
+    
     <form id="member_form" onsubmit="return false;" action="/api/business/{{bid}}/member/{{_id}}">
 		    <fieldset id="member_info">
 			    <legend>Member Information</legend>
@@ -58,6 +76,7 @@ $(document).ready(function(){
 							<input type="radio" name="sex" />
 							<label>Female</label>
 							</div>
+						
 					    </li>
                          <li>
 						    <label for = "smocking" class="smock">Smoking</label><br />
@@ -70,33 +89,51 @@ $(document).ready(function(){
 							<label>No</label>
 							</div>
 					    </li>
-                        <li>
-						    <label for="likes"  class="like">I Like</label><br />
-						    <input type="text" name="likes" id="like" value = ""/>
-							
-					    </li> 
+						<li>
+							<label for = "speak" class="speaks">Speak*</label><br />
+							<select   multiple="multiple" placeholder="Speaks" onchange="console.log($(this).children(':selected').length)" class="testsel">
+								<option value="English">English</option>
+								<option value="German">German</option>
+								<option value="Latin">Latin</option>
+								<option value="French">French</option>
+							</select>
+						</li>
+						<li>
+							<label for = "musicPre" class="musicPre">Music Preference</label><br />
+							<select style="margin-top:55px;"   multiple="multiple" placeholder="Likes" onchange="console.log($(this).children(':selected').length)" class="testsel">
+								<option value="jazz">Jazz</option>
+								<option value="pop">Pop</option>
+								<option value="folk">Folk</option>
+								<option value="country">Country</option>
+								<option value="classic">Classic</option>
+								<option value="lounge">Lounge</option>
+								<option value="rocknroll">Rock'n'Roll</option>
+								<option value="groove">Groove</option>
+								<option value="latin">Latin</option>
+							</select>
+						</li>
 				    </ul>
 		    </fieldset>
     </form>
-
     <form id="car_info" onsubmit="return false;">
         <fieldset id="car_info">
             <legend class="car_fo">Car Information</legend>
-                <ul>
+                <ul class="input_field_wrap">
                     <li id="Indx">Number</li>
                     <li>
-                        <label for="model">Car Model*</label><br />
+                        <label for="model">Car Brand*</label><br />
                         <input type="text" name="model" id="model" value=""/>
                     </li>
                     <li>
-                        <label for="capicity" class="capacity">Capicity*</label><br />
-                        <input type="text" name="capicity" id="capicity" value=""/>
+                        <label for="year" class="year">Year*</label><br />
+                        <input type="text" name="year" id="year" value=""/>
                     </li>
                 </ul>
+				
         </fieldset>
     </form>
-	<button id="add_likes" type="button" >Add Likes</button>
-    <button id="add_car" type="button" >Add Another car </button>
+
+    <button id="add_car" name="add_car">Add Another car </button>
 
 </div><!--End of content-->
 	<div class="clr"></div>
