@@ -1300,6 +1300,7 @@ legend{
     
 }
 .mem_id{
+	display:none;
    margin-left:330px;
    font:normal 16px "Calibri";
    color:#a3a7aa; 
@@ -1309,53 +1310,50 @@ legend{
     
 }
 .fullname{
-   margin-left:300px;
+   margin-left:230px;
    font:normal 16px "Calibri";
    color:#a3a7aa;
     
 }
 #fullname{
-   margin-left:300px;
-   margin-top:5px;
-   width:350px;
+   margin-left:230px;
+   margin-top:10px;
+   width:500px;
     
 }
-.gend{
+.gend, .smock{
    margin-left:230px;
    font:normal 16px "Calibri";
    color:#a3a7aa;
-   
     
 }
-
-.radio_button{
+.speaks{
+	float: right;
+	margin: -180px 450px 0 0;
+	font:normal 16px "Calibri";
+  color:#a3a7aa;
+	
+}
+.musicPre{
+	float: right;
+	margin: -125px 380px 0 0;
+	font:normal 16px "Calibri";
+  color:#a3a7aa;
+	
+}
+.radio_button, .radio_button3{
 	margin-left: 230px;
 	margin-top: 10px;
 }
-.radio_button2{
-	margin-left: 319px;
-	margin-top: -20px;
-}
-.radio_button3{
-	float:right;
-	margin-right: 330px;
-	margin-top: -66px;
-	
-}
-.radio_button4{
-	float:right;
-	margin-right: 260px;
-	margin-top: -66px;
-
-	
+.radio_button2, .radio_button4{
+	margin-left: 339px;
+	margin-top: -39px;
 }
 
 .smock{
-   float:right;
+   /* float:right; */
    font:normal 16px "Calibri";
    color:#a3a7aa;
-   margin-top:-70px;
-   margin-right:350px;
     
     
 }
@@ -1374,34 +1372,34 @@ legend{
 
 }
 #car_info ul{
-    margin-top:20px;
+    margin:-50px 0 0 0;
     
 }
 .car_fo{
     display:none;
 }
 #car_info ul label{
-   
-   margin-left:150px;
+   margin-left:240px;
    font:normal 16px "Calibri";
    color:#a3a7aa;
 }
 #model, #capicity{
     margin-top:10px;
-    margin-left:150px;
+    margin-left:240px;
     
 }
-.capacity{
+.year{
     float:right;
-    margin-right:550px;
+    margin-right:465px;
     margin-top:-60px;
     
 }
-#capicity{
-    margin-left:415px;
+#year{
+    margin-left:500px;
     margin-top:-68px;
     border:1px solid black;
-    padding:5px 5px;
+    padding:5px 0px;
+		width:80px
     
 }
 #add_likes{
@@ -1431,6 +1429,7 @@ legend{
 #_id{
     border:1px solid black;
     padding:5px 5px;
+		display:none;
 }
 #fullname,#like, #model{
     border:1px solid black;
@@ -1551,9 +1550,10 @@ legend{
 	float:left;
 	margin-top:-30px;
 }
-#capicity{
+#year{
 	float:left;
-	margin-top:-46px;
+	margin-left:503px;
+	margin-top:-43px;
 }
 #add_car{
 	margin-top:-46px;
