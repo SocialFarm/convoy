@@ -1,0 +1,124 @@
+.starRating{
+  display        : inline-block;
+  position       : relative;
+  height         : 24px;
+  background     : url('stars.png') repeat-x 0 0;
+  vertical-align : bottom;
+}
+
+.starRating div{
+  float    : left;
+  position : relative;
+  height   : 24px;
+}
+
+.starRating input{
+  position : relative;
+  z-index  : 1;
+  width    : 24px;
+  height   : 24px;
+  margin   : 0;
+  padding  : 0;
+  opacity  : 0;
+}
+
+.starRating label{
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 24px;
+}
+
+.starRating span{
+  display : none;
+}
+
+.starRating       input:checked       + label,
+.starRating:hover input:checked:hover + label{
+  background : url('stars.png') repeat-x 0 -24px;
+}
+
+.starRating:hover input:checked + label{
+  background : transparent;
+}
+
+.starRating:hover input:hover + label{
+  background : url('stars.png') repeat-x 0 -48px;
+}
+
+/****************/
+/*Speech Bubbles*/
+/***************/
+#rate_star{
+  width:95px;
+  margin-left: -15px;
+  
+}
+.review{
+margin:0;
+ 
+}
+.review div{
+border-bottom: 1px solid #069fd7;
+padding:20px;
+
+  
+  
+}
+.bubble 
+{
+position: relative;
+width: 310px;
+height: 80px;
+padding: 0px;
+margin-left: 120px;
+margin-top:-85px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #069fd7 solid 1px;
+
+}
+
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 8px 24px 8px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -24px;
+top: 42px;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 8px 24px 8px 0;
+border-color: transparent #069fd7;
+display: block;
+width: 0;
+z-index: 0;
+left: -25px;
+top: 42px;
+}
+
+.rate{
+  margin: 5px 0 10px 20px;
+  border-bottom: #069fd7 solid 1px;
+  width:150px;
+
+}
+.remark{
+  margin: 5px 0 10px 20px;
+  
+  
+}
