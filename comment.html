@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http//www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+        <link rel = "stylesheet" type="text/css" href= "css/reset.css"/>
+        <link rel = "stylesheet" type="text/css" href= "css/style.css"/>
+		<link rel = "stylesheet" type="text/css" href= "css/star.css"/>
+
+        <title>Social Ride - Home </title>
+
+    </head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/map_utils.js"></script>	
+    <body>
+        <!--Container for our main-->
+        <div id="container">
+			<div id = "header">
+                <a href="home.html" ><h1> Social Ride</h1></a> 	
+                <button class = "uiButton" id="login">Login</button><br/>
+            </div><!--end of header-->
+			
+			<!--OFFERING AND PARTICIPANTS AREA-->
+			<div class="Offerings">
+			<h3>Offerings</h3>
+				<ul>
+					<li><img id="rate_star" src= "images/stars_img.png" alt= "rate star"></li>
+					<li><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></li>
+					<li><label for="Name">Name</label></li>
+				
+				</ul>
+			</div>
+			<div class="participant">
+			<h3>Participants</h3>
+				<div>
+					<ul>
+						<li><img id="rate_star" src= "images/stars4_img.png" alt= "rate star"></li>
+						<li><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></li>
+						<li><label for="Name">Name</label></li>
+					
+					</ul>
+					<ul>
+						<li><img id="rate_star" src= "images/stars_img.png" alt= "rate star"></li>
+						<li><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></li>
+						<li><label for="Name">Name</label></li>
+					
+					</ul>
+					<ul>
+						<li><img id="rate_star" src= "images/stars_img.png" alt= "rate star"></li>
+						<li><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></li>
+						<li><label for="Name">Name</label></li>
+					
+					</ul>
+					<ul>
+						<li><img id="rate_star" src= "images/stars_img.png" alt= "rate star"></li>
+						<li><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></li>
+						<li><label for="Name">Name</label></li>
+					
+					</ul>
+				</div>
+			</div>
+			<!--END-->
+			<!---->
+			<div class="ride-info">
+				<ul>
+					<li><img src="images/source-img.png" alt="source" id="source" /><label for="source" id="source">Source</label></li>
+					<li><img src="images/destination-img.png" alt="source" id="destin" /><label for="destination" id="destination">Destination</label></li>
+					<li><label for="time" id="time">Time</label></li>
+					<li><label for="distance" id="distance">Distance</label></li>
+				</ul>
+			</div>
+			
+			<div class="review">
+					<div>
+						<p><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></p>
+						<ul class="bubble">
+							<li class="rate"><img id="rate_star" src= "images/stars_img.png" alt= "rate star"></li>
+							<li class="remark">Thank you! Your so cool</li>
+						</ul>
+					</div>
+					<div>
+						<p><img id="profilePic" src= "images/Avatar.png" alt= "Upicture" class="UpictureImage"></p>
+						<ul class="bubble">
+							<li class="rate"><img id="rate_star" src= "images/stars_img.png" alt= "rate star"></li>
+							<li class="remark">Thank you! Your so cool</li>
+						</ul>
+					</div>
+					
+			</div>
+						
+			<div id="rate_comment">
+			<h3>Rate:</h3>
+				<div class="starRating">
+				  <div>
+					<div>
+					  <div>
+						<div>
+						  <input id="rating1" type="radio" name="rating" value="1">
+						  <label for="rating1"><span>1</span></label>
+						</div>
+						<input id="rating2" type="radio" name="rating" value="2">
+						<label for="rating2"><span>2</span></label>
+					  </div>
+					  <input id="rating3" type="radio" name="rating" value="3">
+					  <label for="rating3"><span>3</span></label>
+					</div>
+					<input id="rating4" type="radio" name="rating" value="4">
+					<label for="rating4"><span>4</span></label>
+				  </div>
+				  <input id="rating5" type="radio" name="rating" value="5">
+				  <label for="rating5"><span>5</span></label>
+				</div>
+				<div class="comment box">
+					<textarea rows="10" cols="60" class="comment_box" value="Enter your comments here" 
+                        onfocus="if(this.value  == 'Enter your comments here') { this.value = ''; } " onblur="if(this.value == '') { this.value = 'Enter your comments here'; } " /></textarea><br/>
+					<input type="submit" class="comment_button" value="Add Comment"></input> 
+				</div>
+			</div>
+             <footer>
+
+                <ul id= "footer_nav">
+                    <li><a href = ""><img src="images/about_icon.png" class="about"/><h4>About us</h4></a></li>	
+                    <li><a href = ""><img src="images/setting_icon.png" class="settings"/><h4>Setting</h4></a></li>
+                    <li><a href = ""><img src="images/mail_icon.png" class="contact"/><h4>Contact us</h4></a></li>
+                </ul>
+            </footer><!--end of footer-->
+            </footer><!--end of footer-->
+        </div><!--end of container-->	
+    </body>
+
+    <div id = "submit" style="position: absolute; display:none;">
+        <button id = "submit_button" onclick=submit_request()>Create Ride</button>
+    </div>
+
+    <div id="map_canvas_home" style="height:400px;width:500px;overflow: auto;"></div>
+
+    <script type="text/javascript">
+        var failure = function() {
+            alert("FAILED");
+        };
+        var success = function() {
+            alert("SUCCESS!!");
+        };
+
+        function fill_user_info(data) {
+            $("#name").text(function(c, n) {
+                return  n + data.name;
+            });
+            $("#gender").text(function(c, n) {
+                return  n + data.gender;
+            });
+            //fill_requested_rides(data);
+            fillNearByRideInfo("request", null);
+            fillNearByRideInfo("offer",null);
+            fillMyRideInfo("request", data.id);
+            fillMyRideInfo("offer", data.id);
+            var picUrl="https://graph.facebook.com/"+data.id+"/picture?type=normal";
+            $("#profilePic").attr("src",picUrl);
+        }
+        function fill_requested_rides(data) {
+            console.log("temp " + data.requested_rides.length);
+            var html = "";
+            for (i = 0; i < data.requested_rides.length; i++) {
+                console.log("Array " + data.requested_rides[i]);
+                html = html + '<div id=" ' + data.requested_rides[i] + '"> <a href="http://socialfarm.org/socialride/job.html?jobId=' + data.requested_rides[i] + '">' +
+                        data.requested_rides[i] + '</a> </div>';
+                console.log(html);
+            }
+            $('#requested_rides').append($(html));
+        }
+
+        function load_user_info() {
+            var url = "http://socialfarm.org/couchdb/social_ride/user." + get_user().id;
+            get_json(url, fill_user_info, failure);
+            //TODO Add code to put the data to couchdb using the uuid reveived in previous step
+        }
+
+    </script>
+
+    <div id="fb-root">
+        <script type="text/javascript" src="js/facebook.js"></script>
+    </div>
+
+</html>

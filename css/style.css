@@ -1,21 +1,14 @@
 /***Importing default css code***/
-
 a {
 	
 	text-decoration: none;
 	
-
 }
-
-
 a.hover {
 	
 	text-decoration: underline;
 	
-
 }
-
-
 h1, h2, h3, h4, h5, h6 {
 	
 	font-family: "AvantGarde-Book Bold", Calibri, "Calibri Light";
@@ -28,10 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 	margin: 0px;
 	
-
 }
-
-
 h1 {
 	
 	font-size: 35px;
@@ -39,42 +29,29 @@ h1 {
 	text-transform: none;
 	color:#fff;
 	
-
 }
-
-
 h3 {
 	
 	font-size: 15px;
 	
 	color: #2388ad;
 	
-
 }
-
-
 h4 {
 	
 	font-size: 13px;
 	
 	color: #3e92b3;
 	
-
 }
-
-
 /*Main CSS*/
-
 html {
 	
 	background-color: white;
 	
 	height: 100%;
 	
-
 }
-
-
 #container {
 	
 	width: 1024px;
@@ -85,10 +62,7 @@ html {
 	
 	margin: 1em auto;
 	
-
 }
-
-
 #header {
 	
 	overflow: hidden;
@@ -103,10 +77,7 @@ html {
 	
 	color: white;
 	
-
 }
-
-
 .fb {
 	
 	float: right;
@@ -114,10 +85,7 @@ html {
 	margin-top: 8px;
 	
 	margin-right: 20px
-
 }
-
-
 #login {
 	
 	float: right;
@@ -126,10 +94,7 @@ html {
 	
 	margin-right: 25px;
 	
-
 }
-
-
 aside {
 	
 	width: 500px;
@@ -138,20 +103,14 @@ aside {
 	
 	float: right;
 	
-
 }
-
-
 .create_rides {
 	
 	margin-left: 325px;
 	
 	margin-top: 5px;
 	
-
 }
-
-
 .textbox1 {
 	
 	height: 15px;
@@ -180,10 +139,7 @@ aside {
 	
 	text-align: center;
 	
-
 }
-
-
 .km {
 	
 	position: absolute;
@@ -194,10 +150,7 @@ aside {
 	
 	font-family: "helveticaNeueLT Std Cn";
 	
-
 }
-
-
 .hours {
 	
 	position: relative;
@@ -208,10 +161,7 @@ aside {
 	
 	font-family: "helveticaNeueLT Std Cn";
 	
-
 }
-
-
 .companion {
 	
 	position: relative;
@@ -222,20 +172,14 @@ aside {
 	
 	font-family: "helveticaNeueLT Std Cn";
 	
-
 }
-
-
 .ban1 {
 	
 	margin-top: -500px;
 	
 	width: 455px;
 	
-
 }
-
-
 /*overlapping images the car and the road sign*/
 .ban2 {
 	
@@ -245,10 +189,7 @@ aside {
 	
 	margin-top: 30px;
 	
-
 }
-
-
 #user_details {
 	
 	top: 100px;
@@ -263,18 +204,13 @@ aside {
 	
 	z-index: 1;
 	
-
 }
-
-
 #user_details .UpictureImage {
 	
 	margin-left: 100px;
 	margin-top: 35px;
 	
-
 }
-
 #user_details h3 {
 	
 	float: left;
@@ -285,18 +221,12 @@ aside {
 	
 	margin-left: 5px;
 	
-
 }
-
-
 .info ul{
 	
 	margin-top: -128px;
 	
-
 }
-
-
 #name {
 	
 	font-family: "Calibri Light";
@@ -307,10 +237,7 @@ aside {
 	
 	margin-left: 215px;
 	
-
 }
-
-
 #gender, #language_spoken, #cars, #smoke, #likes {
 	
 	font-family: "Calibri Light";
@@ -323,10 +250,7 @@ aside {
 	
 	margin-top: -100px;
 	
-
 }
-
-
 #smoke, #likes {
 	
 	font-family: "Calibri Light";
@@ -339,26 +263,17 @@ aside {
 	
 	margin-top: auto;
 	
-
 }
-
-
 #user_details li {
 	
 	margin-top: 10px;
 	
-
 }
-
-
 .link_to_createpage {
 	
 	color: white;
 	
-
 }
-
-
 #submit_button{
 	
 	-moz-box-shadow: 0px 10px 14px -7px #276873;
@@ -394,8 +309,6 @@ aside {
 	text-shadow: 0px 1px 0px #3d768a;
 	
 	margin: 5px 0px 5px 0px;
-
-
 }
 #submit_button_1{
 	
@@ -434,7 +347,6 @@ aside {
 	margin: 5px 0px 5px 0px;
 	float:right;
 }
-
 #content {
 	
 	background-color: #f7f7f7;
@@ -443,10 +355,7 @@ aside {
 	margin-top: 295px;
 	border-top: 1px solid #2388ad;
 	
-
 }
-
-
 #requested_rides {
 	
 	width: 490px;
@@ -455,10 +364,7 @@ aside {
 	
 	float: left;
 	
-
 }
-
-
 #requested_rides h3 {
 	
 	margin-bottom: -10px;
@@ -471,10 +377,7 @@ aside {
 	
 	width: 135px;
 	
-
 }
-
-
 #tab_request, #tab_my_req {
 	
 	font-size: 11.5px;
@@ -482,15 +385,12 @@ aside {
 	font-family: "Calibri";
 	
 	color: #7a7a7a;
-
 	margin-bottom: 20px;
 	width:500px;
-
 }
 #tab_my_req{
 	width:505px;
 }
-
 .tab_heading th{
 	
 	border-top: 1px solid black;
@@ -498,18 +398,12 @@ aside {
 	padding:3px;
 	text-align:left;
 	width:150px;
-
-
 }
-
 #data_sample td {
 	
 	margin-top:10px;
 	
-
 }
-
-
 #data_sample {
 	
 	width: 490px;
@@ -521,18 +415,12 @@ aside {
 	font-family: "Calibri light";
 	
 	border-bottom: 1px solid #b8b8b8;
-
 }
-
-
 .when {
 	
 	padding-left: 5px;
 	padding-top:5px;
-
 }
-
-
 .sd span {
 	
 	color: #2388ad;
@@ -541,31 +429,21 @@ aside {
 	
 	font-weight: bold;
 	
-
 }
-
-
 .lug {
 	
 	padding-left: 10px;
 	
-
 }
-
-
 .stopver {
 	
 	padding-left: 10px;
 	
-
 }
-
-
 .friends {
 	
 	padding-left:5px;
 	
-
 }
 #rate{
 	margin-top:5px;
@@ -579,10 +457,7 @@ aside {
 	
 	margin-top: -40px;
 	
-
 }
-
-
 .tab_past_head th {
 	
 	text-transform: uppercase;
@@ -601,20 +476,14 @@ aside {
 	
 	padding-bottom: 3px;
 	
-
 }
-
-
 #data_sample_past_req td {
 	
 	padding-top: 10px;
 	
 	padding-bottom: 10px;
 	
-
 }
-
-
 #data_sample_past_req {
 	
 	width: 490px;
@@ -627,40 +496,28 @@ aside {
 	
 	border-bottom: 1px solid #b8b8b8;
 	
-
 }
-
-
 .when_past_req {
 	
 	padding-left: 10px;
 	
 	color: #7a7a7a;
 	
-
 }
-
-
 .sd_past_req span {
 	
 	color: #2388ad;
 	
 	border-bottom: 1px dashed;
 	
-
 }
-
-
 .lug_past_req {
 	
 	color: #7a7a7a;
 	
 	padding-left: 10px;
 	
-
 }
-
-
 .stopver_past_req {
 	
 	color: #7a7a7a;
@@ -669,10 +526,7 @@ aside {
 	
 	padding-right: 10px;
 	
-
 }
-
-
 .friends_past_req {
 	
 	padding-left: 10px;
@@ -681,10 +535,7 @@ aside {
 	
 	color: #7a7a7a;
 	
-
 }
-
-
 /*************************/
 /******Offered rides******/
 /*************************/
@@ -696,10 +547,7 @@ aside {
 	
 	float: right;
 	
-
 }
-
-
 #offered_rides h3 {
 	
 	margin-bottom: -10px;
@@ -713,10 +561,7 @@ aside {
 	width: 115px;
 	
 	
-
 }
-
-
 #tab_offer, #tab_my_offer {
 	
 	font-size: 11.5px;
@@ -727,9 +572,7 @@ aside {
 	
 	margin-bottom: 20px;
 	
-
 }
-
 .heading_offer th {
 	
 	border-top: 1px solid black;
@@ -738,20 +581,14 @@ aside {
 	text-align:left;
 	width:150px;
 	
-
 }
-
-
 #sample_offer td {
 	
 	padding-top: 10px;
 	
 	padding-bottom: 10px;
 	
-
 }
-
-
 #sample_offer {
 	
 	width: 490px;
@@ -764,18 +601,12 @@ aside {
 	
 	border-bottom: 1px solid #b8b8b8;
 	
-
 }
-
-
 .when_offer {
 	
 	padding-left: 10px;
 	
-
 }
-
-
 .sd_offer span {
 	
 	color: #2388ad;
@@ -784,42 +615,27 @@ aside {
 	
 	font-weight: bold;
 	
-
 }
-
-
 .lug_offer {
 	
 	padding-left: 20px;
 	
-
 }
-
-
 .stopver_offer {
 	
 	padding-left: 30px;
 	
-
 }
-
-
 .friends_offer {
 	
 	padding-left: 20px;
 	
-
 }
-
-
 #past_offer {
 	
 	margin-top: -40px;
 	
-
 }
-
-
 .past_head_offer th {
 	
 	text-transform: uppercase;
@@ -838,20 +654,14 @@ aside {
 	
 	padding-bottom: 3px;
 	
-
 }
-
-
 #sample_past_offer td {
 	
 	padding-top: 10px;
 	
 	padding-bottom: 10px;
 	
-
 }
-
-
 #sample_past_offer {
 	
 	width: 490px;
@@ -864,30 +674,21 @@ aside {
 	
 	border-bottom: 1px solid #b8b8b8;
 	
-
 }
-
-
 .when_past_offer {
 	
 	padding-left: 10px;
 	
 	color: #7a7a7a;
 	
-
 }
-
-
 .sd_past_offer span {
 	
 	color: #2388ad;
 	
 	border-bottom: 1px dashed;
 	
-
 }
-
-
 footer {
 	
 	bottom: -60px;
@@ -900,30 +701,21 @@ footer {
 	
 	margin-bottom: 0px;
 	
-
 }
-
-
 #footer_nav h4 {
 	
 	color: #7a7a7a;
 	
 	clear: both;
 	
-
 }
-
-
 footer li {
 	
 	display: inline-table;
 	
 	margin-top: 5px;
 	
-
 }
-
-
 footer li h4 {
 	
 	margin-top: 5px;
@@ -931,26 +723,17 @@ footer li h4 {
 	font-family: "AvantGarde Bk BT";
 	
 	font-size: 100%
-
 }
-
-
 footer img {
 	
 	margin-top: 15px;
 	
-
 }
-
-
 #footer_nav .contact {
 	
 	margin-top: 22px;
 	
-
 }
-
-
 #footer_nav a {
 	
 	float: left;
@@ -971,20 +754,13 @@ footer img {
 	
 	width: 100px;
 	
-
 }
-
-
 #footer_nav a:hover {
 	
 	background-image: url(../images/hover_footer.png);
 	
-
 }
-
-
 /****REQUEST/CREATE RIDE PAGE STYLE****/
-
 .request {
 	
 	color: #136786;
@@ -1001,10 +777,7 @@ footer img {
 	
 	width: 140px;
 	
-
 }
-
-
 #request_form {
 	
 	font-family: "Calibri Light";
@@ -1021,10 +794,7 @@ footer img {
 	
 	height: 345px;
 	
-
 }
-
-
 #triangle-down {
 	
 	width: 0;
@@ -1043,10 +813,7 @@ footer img {
 	
 	border-top: 25px solid #3e92b3;
 	
-
 }
-
-
 table {
 	
 	width: 100%;
@@ -1057,10 +824,7 @@ table {
 	
 	border-spacing: 10px;
 	
-
 }
-
-
 .label_form {
 	
 	position: absolute;
@@ -1081,38 +845,26 @@ table {
 	
 	font-weight: semi-bold;
 	
-
 }
-
-
 #sex {
 	
 	margin-left: 150px;
 	
 	margin-top: 10px;
 	
-
 }
-
-
 #smoking {
 	
 	margin-left: 150px;
 	
 	margin-top: 20px;
 	
-
 }
-
-
 .sourceIcon, .sourceIcon2, .calendar_icon, .luggage, .stop, .friend {
 	
 	margin-left: 20px;
 	
-
 }
-
-
 #boundary {
 	
 	position: absolute;
@@ -1123,10 +875,7 @@ table {
 	
 	border-top: 2px solid #3e92b3;
 	
-
 }
-
-
 #tab th {
 	
 	text-transform: uppercase;
@@ -1137,10 +886,7 @@ table {
 	
 	text-align: center;
 	
-
 }
-
-
 .textbox {
 	
 	height: 30px;
@@ -1165,10 +911,7 @@ table {
 	
 	font: bold 13.5px "AvantGarde-Book Bold";
 	
-
 }
-
-
 #request_ride {
 	
 	-moz-box-shadow: 0px 10px 14px -7px #276873;
@@ -1207,28 +950,19 @@ table {
 	
 	margin-top: 25px;
 	
-
 }
-
-
 #request_ride:hover, #submit_button:hover {
 	
 	background-color: #136786;
 	
-
 }
-
-
 #request_ride:active, #submit_button:active {
 	
 	position: relative;
 	
 	top: 1px;
 	
-
 }
-
-
 #map_canvas {
 	
 	border: 2px solid #2388ad;
@@ -1243,18 +977,12 @@ table {
 	
 	margin-left: 640px;
 	
-
 }
-
-
 #map_canvas_home {
 	
 	display: none;
 	
-
 }
-
-
 /***MEMBER PAGE STYLE***/
 legend{
 	float:left;
@@ -1294,7 +1022,7 @@ legend{
   margin-top:20px;  
   margin-bottom:20px;  
 }
-#add_photo:hover, #add_car:hover, #add_likes:hover{
+#add_photo:hover, #add_car:hover, #add_likes:hover, .comment_button:hover{
   background: #37a9cc;
   text-decoration: none;
     
@@ -1349,7 +1077,6 @@ legend{
 	margin-left: 339px;
 	margin-top: -39px;
 }
-
 .smock{
    /* float:right; */
    font:normal 16px "Calibri";
@@ -1357,7 +1084,6 @@ legend{
     
     
 }
-
 .like{
    float:left;
    margin-left:230px;
@@ -1369,7 +1095,6 @@ legend{
 #like{
    margin-left:230px;
    margin-top:0px; 
-
 }
 #car_info ul{
     margin:-50px 0 0 0;
@@ -1436,7 +1161,6 @@ legend{
     padding:5px 40px;
     
 }
-
 #update{
     margin:auto 0 20px 350px;
     color: #ffffff;
@@ -1457,11 +1181,94 @@ legend{
     font:normal 12px "AvantGarde Bk BT";
     text-transform:uppercase;
 }
-
 #update:hover, #cancel:hover{
     background:#343434;
-
     
+}
+/****************************/
+/*       Comment Page       */
+/****************************/
+.Offerings{
+	margin-left: 150px;
+	margin-top: 25px;
+	
+	
+}
+.Offerings h3{
+	margin-bottom: 20px;
+	
+	
+}
+
+.participant{
+	display: inline;
+	float: right;
+	margin-top: -160px;
+	margin-right: 135px;
+	
+}
+.participant ul{
+	display: inline-block;
+	margin-right: 54px;
+	padding-top:20px;
+
+	
+}
+.participant label, .Offerings label{
+	font-size: 13.5px;
+	font-family: "Calibri";
+	color: #1d89aa;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #069fd7;
+	
+}
+.ride-info ul{
+margin:0px;
+padding:40px;
+list-style-type: none;
+border-bottom: 1px solid #069fd7;
+
+}
+
+.ride-info ul li { 
+	display: inline; 
+	margin-left: 90px;
+}
+#rate_comment{
+	margin:0 0 0 250px;
+	
+	
+}
+.starRating{
+	margin:-20px 0 5px 380px;
+}
+#rate_comment h3{
+	float:right;
+	display:inline;
+	margin-right:400px;
+	margin-top: 20px;
+}
+.comment_box{
+	resize: none;
+	
+	
+}
+.review{
+	font-size: 13.5px;
+	font-family: "Calibri";
+	color: #1d89aa;
+	margin-bottom: 20px;
+}
+.comment_button{
+  margin:20px 0 20px 125px;
+  color: #ffffff;
+  text-transform:Uppercase; 
+  background: #1d89aa;
+  border:none; 
+  padding:5px 60px;
+  font:normal 16px "Calibri";
+  text-transform:uppercase;
+
 }
 /****adjustment for Chrome***/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -1472,17 +1279,13 @@ legend{
 		
 	margin-top: 145px;
 		
-
 	}
-
 	
 #km {
 		
 	top: 45px;
 		
-
 	}
-
 	
 .textbox {
 		
@@ -1492,25 +1295,19 @@ legend{
 		
 	margin-left: 140px;
 		
-
 	}
-
 	
 #request_form {
 		
 	margin-left: 300px;
 		
-
 	}
-
 	
 .label_form {
 		
 	margin-top: 20px;
 		
-
 	}
-
 	
 #sex {
 		
@@ -1518,24 +1315,18 @@ legend{
 		
 	margin-bottom: 20px;
 		
-
 	}
-
 	
 #smoking {
 		
 	margin-top: 10px
-
 	}
-
 	
 #triangle-down {
 		
 	left: 300px;
 		
-
 	}
-
 	
 #add_likes{
 	float:right;
@@ -1558,11 +1349,16 @@ legend{
 #add_car{
 	margin-top:-46px;
 }
-
 legend{
 	float:left;
     margin-top:20px;
 	font:normal 18px "AvantGarde-Book";
 }
-}
+#rate_comment h3{
+	margin-right:450px;
 
+}
+.starRating{
+	margin:-20px 0 5px 330px;
+}
+}
