@@ -1,4 +1,5 @@
 // This file contains utility function for social ride
+//TODO :: Refactoring move the form related functions to a diff file
 
 var map = null;
 
@@ -315,6 +316,8 @@ function fillMyRideInfo(type,userId) {
         });
     },do_nothing);
 }
+
+// TODO :: refactoring use a underscore option to prevent the below function from being called twice.
 var tmp = 0;
 function updateCurrentLocation(url,user)
 {

@@ -121,14 +121,13 @@
       form_data['dest_location']= geolocation;
       form_data['dest_geocode'] = encodeGeoPosition(geolocation.lat(),geolocation.lng());
     }
-
   }
   var failure = function(){
     alert("FAILED");
-  }
+  };
   var success = function(){
     alert("SUCCESS!!");
-  }
+  };
 
   function validateForm(data)
   {
