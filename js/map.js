@@ -129,7 +129,7 @@ var Map = (function() {
         updateCurrentLocation: function (userUrl, userInfo) {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function savePosition(position) {
-                    var loc = this.encodeAddress(position.coords.latitude ,position.coords.longitude);
+                    var loc = encodeGeoPosition(position.coords.latitude ,position.coords.longitude);
                     user['curLocation']=loc;
                     var data = JSON.stringify(userInfo);
                     if(tmp == 0){

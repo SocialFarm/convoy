@@ -44,9 +44,9 @@ var CouchDB = (function() {
         getUserRideInfo: function(userid, rideType, successcb, failurecb) {
             var viewUrl = null;
             if(rideType === 'offer') {
-                viewUrl = SR.couchDB.nearbyOfferView + '%22' + userid +'%22';
+                viewUrl = SR.couchDB.nearbyOfferView + '?key=%22user.' + userid +'%22';
             } else {
-                viewUrl = SR.couchDB.nearbyReqView + '%22' + userid +'%22';
+                viewUrl = SR.couchDB.nearbyReqView + '?key=%22user.' + userid +'%22';
             }
             get_json(viewUrl, successcb, failurecb);
         }
