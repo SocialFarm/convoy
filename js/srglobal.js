@@ -9,3 +9,13 @@ SR.couchDB = {
     myOfferView : this.viewUrl + 'my_offer',
     myReqView : this.viewUrl + 'my_request'
 };
+
+SR.divId = {
+    ride: {
+        request: 'tab_request',
+        offer: 'tab_offer'
+    },
+    user: {
+        request: 'tab_my_req',
+        offer: 'tab_my_offer'
+};

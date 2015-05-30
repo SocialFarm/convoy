@@ -4,6 +4,8 @@
 
 var Map = (function() {
 
+    var tmp=0;
+    
     var attachMessage = function(address,geoLocation,marker,type)
     {
         var infowindow = new google.maps.InfoWindow({
@@ -81,7 +83,8 @@ var Map = (function() {
     };
 
     return {
-        init : function(){
+
+        init: function(){
             //geocoder = new google.maps.Geocoder();
             var latlng = new google.maps.LatLng(12.9715987,77.59456269 );
             var mapOptions = {
@@ -91,7 +94,8 @@ var Map = (function() {
             };
             var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
         },
-        map_address_on_map : function(address, type, successcb, failurecb) {
+
+        map_address_on_map: function(address, type, successcb, failurecb) {
             var geocoder = new google.maps.Geocoder();
             var geolocation = {};
             geocoder.geocode( { 'address': address}, function(results, status) {
@@ -119,8 +123,10 @@ var Map = (function() {
                 }
             });
         },
-        encodeAddress : encodeGeoPosition ,
-        updateCurrentLocation : function (userUrl, userInfo) {
+
+        encodeAddress: encodeGeoPosition ,
+
+        updateCurrentLocation: function (userUrl, userInfo) {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function savePosition(position) {
                     var loc = this.encodeAddress(position.coords.latitude ,position.coords.longitude);

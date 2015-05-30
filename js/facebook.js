@@ -29,7 +29,7 @@ function set_logout_button(){
 }
 
 function AfterFacebookIsLoaded() {
-		render_member_info();
+    render_member_info();
     load_user_info();
 }
 
@@ -44,13 +44,12 @@ function get_facebook_user(response){
 	FB.api('/me', function(data) {
 		set_user(data);
         set_auth_token(response);
-        add_user_to_socialride();
-        /*  this allows for clientside code which is only called when the user is logged in
+        CouchDB.add_user_to_database();
+        /*  this allows for client side code which is only called when the user is logged in
             simply define the function in a script tag, and call other functions from it
         */
 
         if(typeof AfterFacebookIsLoaded == 'function') {
-
             AfterFacebookIsLoaded();
             //to make sure this is only ever called once
             window['AfterFacebookIsLoaded'] = null;

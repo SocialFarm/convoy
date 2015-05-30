@@ -7,9 +7,13 @@
     
 	<title>Social Ride - Create Ride </title>
 </head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAUcTvML7PuCUAqSU8RzF-OLtu5EvDqY9Q&sensor=false"></script>
+<script type="text/javascript" src="js/thirdparty/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/thirdparty/googlemap.js"></script>
+<script type="text/javascript" src="js/thirdparty/underscore.js"></script>
 <script type="text/javascript" src="js/map_utils.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/couchdb.js"></script>
+<script type="text/javascript" src="js/srglobal.js"></script>
 
 <body>
     <div id="container">
@@ -114,21 +118,21 @@
     {
       form_data['source_address'] = address;
       form_data['source_location']= geolocation;
-      form_data['source_geocode'] = encodeGeoPosition(geolocation.lat(),geolocation.lng());
+      form_data['source_geocode'] = Map.encodeAddress(geolocation.lat(),geolocation.lng());
     }
     else {
       form_data['dest_address'] = address;
       form_data['dest_location']= geolocation;
-      form_data['dest_geocode'] = encodeGeoPosition(geolocation.lat(),geolocation.lng());
+      form_data['dest_geocode'] = Map.encodeAddress(geolocation.lat(),geolocation.lng());
     }
 
-  }
+  };
   var failure = function(){
     alert("FAILED");
-  }
+  };
   var success = function(){
     alert("SUCCESS!!");
-  }
+  };
 
   //TODO :: Add more validations to this function
   function validateForm(data)
@@ -151,15 +155,15 @@
   }
 
   function readform(){
-    init_map();
+    Map.init();
     $("#create_ride").hide();
     $("#submit").show();
     form_data = read_html_form_data("request_form");
     
     if(validateForm(form_data))
     {
-      map_address_on_map(form_data['source'],'source',change_location,failure);
-      map_address_on_map(form_data['destination'],'destination',change_location,failure);
+      Map.map_address_on_map(form_data['source'],'source',change_location,failure);
+      Map.map_address_on_map(form_data['destination'],'destination',change_location,failure);
       form_data['type']="offer";
       form_data['price']="10.0";
       form_data['customer']=get_user().name;
