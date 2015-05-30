@@ -1,6 +1,7 @@
 //map.js
 //Util functions to interact with google map apis
 
+
 var Map = (function() {
 
     var attachMessage = function(address,geoLocation,marker,type)
